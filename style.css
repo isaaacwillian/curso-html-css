@@ -28,6 +28,7 @@ body{
     max-width: 230px;
     padding: 20px;
     float: right;
+    margin: 20px;
 }
 h2{
     font-size: 16px;
@@ -41,8 +42,7 @@ select{
     appearance: none;
     background-image: url("images/arrow.jpg");
     background-repeat: no-repeat;
-    background-position-x: calc(95%);
-    background-position-y: center;
+    background-position: calc(95%) center;
 }
 .marg{
     margin-bottom: 5px;
@@ -57,24 +57,44 @@ select{
     background: rgb(0, 195, 221);
     font-weight: bold;
 }
-
 footer{
-    width: 800px;
-    height: 250px;
-    background: rgb(59, 57, 57);
-    margin: auto;
+    background: rgb(80, 80, 80);
+    overflow: hidden;
+    text-align: center;
 }
-.img{
-    height: 190px;
+.picture{
+    width: 160px;
+    padding: 40px;
     float: left;
-    margin-left: 150px;
-    margin-top: 30px
+    margin-left: 60px;
 }
-.fot{
-    width: 320px;
-    height: 200px;
-    float: left;
-    margin:20px;
-    font-size: 15px;
-    color: white;
+.description{
+    display: inline-block;
+    color:white;
+    max-width: 40%;
+    margin: 40px;
+    text-align: left;
+}
+.description h3, .description p{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:650px) {
+    .form {
+        max-width: 230px;
+        float: none;
+        margin: auto;
+    }
+    .description{
+        max-width: 500px;
+        text-align: center;
+        margin: 40px;
+        margin-top: 0px;
+    }
+    .picture{
+        float:none;
+        margin:auto;
+    }
+    .description h3, .description p{
+        text-align: left;
+    }
 }
